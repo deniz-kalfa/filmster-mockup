@@ -1,7 +1,7 @@
 # type 'make -s list' to see list of targets.
 
 run-app:
-	  PORT=5000 ./node_modules/forever/bin/forever ./node_modules/nodemon/nodemon.js server.js
+	grunt server
 
 test-app:
 	echo 'No test to run for this project'
@@ -10,7 +10,7 @@ test-app-ci:
 	make test-app
 
 setup-app:
-	echo 'Nothing to setup, just run "make run-app"'
+	git remote add mockup git@heroku.com:filmster-mockup.git
 
 setup-heroku:
 	heroku apps:create --remote mockup filmster-mockup
