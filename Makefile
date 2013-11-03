@@ -15,6 +15,9 @@ setup-app:
 setup-heroku:
 	heroku apps:create --remote mockup filmster-mockup
 
+deploy-app:
+	git subtree push --prefix dist mockup master
+
 .PHONY: no_targets__ list
 no_targets__:
 list:
