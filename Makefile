@@ -22,6 +22,7 @@ setup-heroku:
 	heroku apps:create --remote mockup filmster-mockup
 
 deploy-app:
+	grunt build
 	git subtree push --prefix dist mockup master
 
 .PHONY: no_targets__ list
