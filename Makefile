@@ -11,6 +11,12 @@ test-app-ci:
 
 setup-app:
 	git remote add mockup git@heroku.com:filmster-mockup.git
+	gem install compass
+	npm install
+	bower install
+
+setup-git:
+	git remote rm origin && git remote add origin git@github-FILMSTER.com:deniz-kalfa/filmster-mockup.git
 
 setup-heroku:
 	heroku apps:create --remote mockup filmster-mockup
