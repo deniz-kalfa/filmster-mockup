@@ -16,4 +16,9 @@ Run the following command and start editing files.
 ```bash
 make run-app
 ```
+## Deployment ##
+Run the following command.
+```bash
+make deploy-app
+```
 
